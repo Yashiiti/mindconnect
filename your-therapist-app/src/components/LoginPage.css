@@ -1,0 +1,45 @@
+.login-page {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Make sure it takes up full viewport height */
+    background: linear-gradient(to bottom right, #667eea, #764ba2); /* Example gradient background */
+    font-family: 'Arial', sans-serif; /* Example font */
+    color: white; /* Text color */
+  }
+  
+  .login-container {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background for container */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    text-align: center; /* Center text within container */
+    width: 400px; /* Adjust width as needed */
+  }
+  
+  .app-title {
+    font-size: 2.5em; /* Larger title */
+    margin-bottom: 10px;
+    color: #f0f0f0; /* Slightly lighter title color */
+  }
+  
+  .tagline {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+      color: #ddd;
+  }
+  
+  .login-page button { /* Style the Google Login button */
+      background-color: #4285F4; /* Google blue */
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .login-page button:hover {
+      background-color: #357ae8; /* Darker blue on hover */
+  }

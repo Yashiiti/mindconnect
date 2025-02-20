@@ -1,0 +1,139 @@
+/* src/pages/TherapistBooking.css */
+.therapist-booking-page {
+    display: flex;
+    flex-direction: column; /* Vertical layout */
+    align-items: center; /* Center horizontally */
+    min-height: 100vh;
+    padding: 20px;
+    background: linear-gradient(to bottom right, #764ba2, #667eea); /* Example gradient */
+    color: white;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .therapist-booking-page h1 {
+    margin-bottom: 20px;
+  }
+  
+  .therapist-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px;
+  }
+  
+  .therapist-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    display: flex; /* Image and details side-by-side */
+    align-items: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effect */
+    cursor: pointer; /* Indicate clickability */
+  }
+  
+  .therapist-card:hover {
+      transform: translateY(-5px); /* Move card up slightly on hover */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Add a more prominent shadow */
+  }
+  
+  
+  .therapist-card.unavailable {
+    opacity: 0.6; /* Reduce opacity for unavailable therapists */
+    cursor: default; /* Remove pointer cursor */
+  }
+  
+  .therapist-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Make image circular */
+    margin-right: 20px;
+    object-fit: cover; /* Maintain aspect ratio and cover container */
+  }
+  
+  .therapist-details {
+    flex: 1; /* Allow details to take up remaining space */
+  }
+  
+  .therapist-details h3 {
+    margin-bottom: 5px;
+  }
+  
+  .therapist-details p {
+    margin-bottom: 10px;
+  }
+  
+  .therapist-details button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .therapist-details button:hover {
+    background-color: #45a049;
+  }
+  
+  .therapist-details button:disabled {
+      background-color: #ccc; /* Gray out disabled button */
+      cursor: default; /* Remove pointer cursor */
+  }
+  
+ 
+  .booking-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(173, 216, 230, 0.95); /* Increased opacity */ /* Or use a solid color: background-color: white; */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+
+  
+  .booking-form h2 {
+    margin-bottom: 10px;
+  }
+  
+  .booking-form label {
+      display: block; /* Labels on separate lines */
+      margin-bottom: 5px;
+  }
+  
+  .booking-form input,
+  .booking-form textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box; /* Include padding in width */
+  }
+  
+  .booking-form button[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  
+  .booking-form button { /* Style the close button */
+      background-color: #f44336; /* Red */
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px; /* Space from submit button */
+  }
+  
+  .booking-form button:hover {
+      opacity: 0.8; /* Slightly less opaque on hover */
+  }

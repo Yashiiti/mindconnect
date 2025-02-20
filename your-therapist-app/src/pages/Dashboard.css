@@ -1,0 +1,118 @@
+/* src/pages/Dashboard.css */
+.dashboard-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #667eea, #764ba2); /* Gradient background */
+    color: white;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .dashboard-container {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white container */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 800px; /* Adjust as needed */
+  }
+  
+  .options-bar {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px; /* Increased margin */
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  .options-bar .option {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px; /* Increased padding */
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    color: #f0f0f0; /* Light text color for options */
+  }
+  
+  .options-bar .option i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #f0f0f0; /* Icon color */
+  }
+  
+  .options-bar .option span {
+    font-size: 1.2em;
+    color: #ddd; /* Slightly darker text color */
+  }
+  
+  .options-bar .option:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white; /* Text color on hover */
+  }
+  
+  
+  .home-content {
+    text-align: left;
+    padding: 20px;
+    color: white; /* White text for content */
+  }
+  
+  .home-content h1 {
+    margin-bottom: 10px;
+    color: #f0f0f0; /* Slightly lighter heading color */
+  }
+  
+  .home-content h2 {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      color: #f0f0f0; /* Slightly lighter heading color */
+  }
+  
+  .home-content p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #ddd; /* Slightly darker paragraph text */
+  }
+  
+  .logout-button {
+    background-color: #d9534f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Add some top margin */
+  }
+  
+  .logout-button:hover {
+    background-color: #c9302c;
+  }
+  
+  /* Responsive adjustments (example) */
+  @media (max-width: 768px) {
+    .dashboard-container {
+      width: 90%; /* Make container wider on smaller screens */
+      padding: 20px;
+    }
+  
+    .options-bar {
+      flex-direction: column; /* Stack options vertically */
+    }
+  
+    .options-bar .option {
+      margin-bottom: 10px; /* Add space between stacked options */
+      flex-direction: row; /* Icon and text side by side */
+      justify-content: center; /* Center horizontally */
+    }
+  
+      .options-bar .option i {
+          margin-right: 10px;
+          margin-bottom: 0;
+      }
+  }
