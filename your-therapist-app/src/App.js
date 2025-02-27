@@ -5,6 +5,7 @@ import Dashboard from './pages/Dashboard';
 import AIChatbot from './pages/AIChatbot'; // Import new components
 import CommunityForum from './pages/CommunityForum';
 import TherapistBooking from './pages/TherapistBooking';
+import Meditation from './pages/Meditation'; // Import new components
 import './App.css';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/ai-chatbot" element={isAuthenticated ? <AIChatbot /> : <Navigate to="/" />} /> {/* New routes */}
         <Route path="/community-forum" element={isAuthenticated ? <CommunityForum /> : <Navigate to="/" />} />
         <Route path="/therapist-booking" element={isAuthenticated ? <TherapistBooking /> : <Navigate to="/" />} />
+        <Route path="/meditation" element={<Meditation />} />
       </Routes>
     </BrowserRouter>
   );

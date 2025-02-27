@@ -1,0 +1,132 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #a8e6cf, #dcedc1);
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .dashboard {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    color: #2b6777;
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .search-bar input {
+    width: 60%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #52b69a;
+    border-radius: 5px 0 0 5px;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  
+  .search-bar button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #52b69a;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  
+  .search-bar button:hover {
+    background-color: #4aa08b;
+  }
+  
+  .suggestions {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .suggestion-title {
+    font-size: 1.5rem;
+    color: #2b6777;
+    margin-bottom: 10px;
+  }
+  
+  .suggestion-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .suggestion-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #f5f5f5;
+    border: 1px solid #52b69a;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .suggestion-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .video-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .video-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .video-thumbnail {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .video-title {
+    font-size: 1.1rem;
+    margin: 10px;
+    color: #333;
+  }
+  
+  .video-channel {
+    font-size: 0.9rem;
+    margin: 0 10px 10px;
+    color: gray;
+  }
